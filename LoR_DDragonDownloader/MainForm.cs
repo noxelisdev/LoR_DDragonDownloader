@@ -14,7 +14,7 @@ namespace LoR_DDragonDownloader
 {
     public partial class MainForm : Form
     {
-        public string appVersion = "1.3.2";
+        public string appVersion = "1.3.3";
         static public string appLanguage = "en";
 
         public string baseUrl = "https://dd.b.pvp.net/";
@@ -60,7 +60,7 @@ namespace LoR_DDragonDownloader
          */
         public void GetVersionsList()
         {
-            string fileLink = "https://github.com/InFinity54/LoR_DDragonDownloader/raw/master/LoR_DDragonDownloader/database/runeterra_versions.json";
+            string fileLink = "https://github.com/noxelisdev/LoR_DDragonDownloader/raw/master/LoR_DDragonDownloader/database/runeterra_versions.json";
             string jsonString = new WebClient().DownloadString(fileLink);
             JArray json = JArray.Parse(jsonString);
 
@@ -75,7 +75,7 @@ namespace LoR_DDragonDownloader
          */
         public void GetLangsList()
         {
-            string fileLink = "https://github.com/InFinity54/LoR_DDragonDownloader/raw/master/LoR_DDragonDownloader/database/runeterra_langs.json";
+            string fileLink = "https://github.com/noxelisdev/LoR_DDragonDownloader/raw/master/LoR_DDragonDownloader/database/runeterra_langs.json";
             string jsonString = new WebClient().DownloadString(fileLink);
             JArray json = JArray.Parse(jsonString);
 
@@ -90,7 +90,7 @@ namespace LoR_DDragonDownloader
          */
         public void GetSetsList()
         {
-            string fileLink = "https://github.com/InFinity54/LoR_DDragonDownloader/raw/master/LoR_DDragonDownloader/database/runeterra_sets.json";
+            string fileLink = "https://github.com/noxelisdev/LoR_DDragonDownloader/raw/master/LoR_DDragonDownloader/database/runeterra_sets.json";
             string jsonString = new WebClient().DownloadString(fileLink);
             JArray json = JArray.Parse(jsonString);
 
